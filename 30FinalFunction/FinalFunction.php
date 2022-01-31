@@ -1,5 +1,12 @@
 <?php 
 
+// > Final Function
+// 1. Kata kunci final juga bisa digunakan di function
+// 2. Jika sebuha function kita tambahkan kata kunci finall, maka artinya function tsb tidak bisa di override lagi di class childnya
+// 3. Ini sangat cocok jika kita ingin mengunci implementasi dari sebuah method agar tidak bisa dirubah lagi oleh class childnya
+
+// > Contoh Final Function
+
 class SocialMedia
 {
     public string $name;
