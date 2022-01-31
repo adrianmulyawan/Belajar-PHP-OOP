@@ -17,7 +17,7 @@ final class Facebook extends SocialMedia
 }
 
 // Error, karena class Facebook sudah final
-class FakeFacebook extends Facebook
-{
+// class FakeFacebook extends Facebook
+// {
 
-}
+// }
