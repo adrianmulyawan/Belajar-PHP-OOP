@@ -24,7 +24,7 @@ trait SayGoodBye
     }
 }
 
-trait sayHello
+trait SayHello
 {
     public function hello(?string $name): void
     {
@@ -39,7 +39,8 @@ trait sayHello
 // > Menggunakan Trait
 class Person 
 {
-    use sayGoodBye, sayHello;
+    // Memanggil Trait
+    use SayGoodBye, SayHello;
 }
 
 $person = new Person();
