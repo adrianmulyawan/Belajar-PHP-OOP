@@ -3,7 +3,7 @@
 // > Trait Conflict
 // 1. Jika kita menggunakan lebih dari satu trait, lalu terdapat function yang sama di trait tsb
 // 2. Maka hal tsb akan menyebabkan konflik
-// 3.  Jika terjadi konglik seperti ini, kita bisa mengatasinya dengan menggunakan kata kunci insteadof
+// 3.  Jika terjadi konflik seperti ini, kita bisa mengatasinya dengan menggunakan kata kunci insteadof
 
 // > Contoh Trait Conflict
 // trait A
