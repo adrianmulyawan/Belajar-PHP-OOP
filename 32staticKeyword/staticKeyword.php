@@ -9,6 +9,8 @@
 
 // > Static keyword digunakan class-class helper / utility jadi tidak butuh di instansiasi
 
+// Note: Dengan Static Function kita tidak bisa memanggil/mengakses function yang lain yang bukan static
+
 // =================================================================================================
 
 // > Contoh Static Keyword Pada Properties
