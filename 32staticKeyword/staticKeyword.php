@@ -36,3 +36,36 @@
 // =================================================================================================
 
 // > Contoh Static Keyowrd Pada Function / Method
+namespace Helper;
+
+class MathHelper
+{
+    // Penerapan static Keyword pada properties
+    static public string $name = "MathHelper";
+
+    // Penerapan static Keyword pada function
+    static public function sum(int ...$numbers): int
+    {
+        $total = 0;
+        
+        foreach ($numbers as $number) {
+            $total = $total + $number;
+        }
+
+        return $total;
+    }
+}
+
+// Mengakses Static Properties
+echo MathHelper::$name . PHP_EOL;
+// Hasil: MathHelper
+
+// Mengubah Static Value Properties
+MathHelper::$name = "Adrian Mulyawan";
+echo MathHelper::$name . PHP_EOL;
+// Hasil: Adrian Mulyawan
+
+// Mengakses Static Function
+$result = MathHelper::sum(10, 10, 10, 10, 10);
+echo MathHelper::$name = "Hasilnya adalah $result" . PHP_EOL;
+// Hasil: Hasilnya adalah 50
