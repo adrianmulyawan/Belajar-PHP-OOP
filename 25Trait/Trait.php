@@ -10,6 +10,52 @@
 // 6. Untuk menggunakan trait di class, kita bisa menggunakan kata kunci use
 
 // > Contoh Trait
+// namespace Data\Traits;
+
+// trait SayGoodBye
+// {
+    // public function goodBye(?string $name): void
+    // {
+        // if (is_null($name)) {
+            // echo "Good bye" . PHP_EOL;
+        // } else {
+            // echo "Good bye $name" . PHP_EOL;
+        // }
+    // }
+// }
+
+// trait SayHello
+// {
+    // public function hello(?string $name): void
+    // {
+        // if (is_null($name)) {
+            // echo "Hello" . PHP_EOL;
+        // } else {
+            // echo "Hello $name" . PHP_EOL;
+        // }
+    // }
+// }
+
+// > Menggunakan Trait
+// class Person 
+// {
+    // Memanggil Trait
+    // use SayGoodBye, SayHello;
+// }
+
+// $person = new Person();
+// $person->hello("Adrian");
+// $person->goodBye("Adrian");
+// Hello Adrian
+// Good bye Adrian
+
+// =================================================================================================
+
+// > Trait Properties
+// 1. Berbeda dengan interface, di trait, kita bisa menambahkan properties
+// 2. Dengan menambahkan properties, secara otomatis class tersebut akan memiliki properties yang ada di trait
+
+// > Contoh Trait Properties
 namespace Data\Traits;
 
 trait SayGoodBye
@@ -24,7 +70,7 @@ trait SayGoodBye
     }
 }
 
-trait SayHello
+trait sayHello
 {
     public function hello(?string $name): void
     {
@@ -36,11 +82,17 @@ trait SayHello
     }
 }
 
-// > Menggunakan Trait
-class Person 
+// Trait Properties
+trait HasName
 {
-    // Memanggil Trait
-    use SayGoodBye, SayHello;
+    public string $name;
+}
+
+class Person
+{
+    // Memanggil Trait SayGoodBye dan SayHello (Fungsi hello dan goodBye)
+    // Memanggil Trait Properties
+    use SayGoodBye, sayHello, HasName;
 }
 
 $person = new Person();
@@ -49,8 +101,5 @@ $person->goodBye("Adrian");
 // Hello Adrian
 // Good bye Adrian
 
-// =================================================================================================
-
-// > Trait Properties
-// 1. Berbeda dengan interface, di trait, kita bisa menambahkan properties
-// 2. Dengan menambahkan properties, secara otomatis class tersebut akan memiliki properties yang ada di trait
+$person->name = "Adrian";
+var_dump($person);
