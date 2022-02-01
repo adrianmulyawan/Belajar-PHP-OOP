@@ -35,7 +35,10 @@ trait B
 class Sample
 {
     use A, B {
+        // Untuk Function doA() kita akan menggunakan dari Trait A, dari pada (insteadof) Trait B
         A::doA insteadof B;
+
+        // Untuk Function doB() kita akan menggunakan dari Trait B, dari pada (insteadof) Trait A
         B::doB insteadof A;
     }
 }
