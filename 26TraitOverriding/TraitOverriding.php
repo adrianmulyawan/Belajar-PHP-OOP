@@ -75,8 +75,8 @@
 // 1. Jika sebuah class memiliki parent class yang memiliki function yang sama dengan function di trait, maka secara otomatis trait akan meng-override function tsb.
 // 2. Namun jika kita membuat function yang sama di class nya, maka secara otomatis kita akan meng-override function di trait
 // 3. Sehingga posisinya seperti ini ParentClass = override by => Trait = override by => ChildClass
-// Parent Class akan ter-override oleh Trait
-// Trait akan ter-override oleh Child Class
+// - Jika di "Parent Class" kita memiliki function yang namanya sama dengan di Trait, maka function di "Parent Class" tsb akan ter-override oleh Trait.
+// - Jika di "child class" kita memiliki function yang sama dengan di Trait, makan function di Trait akan ter-override oleh function yang ada di "child class".
 
 // =================================================================================================
 
@@ -125,7 +125,6 @@
     // Memanggil Trait Properties
     // use SayGoodBye, sayHello, HasName, CanRun;
 
-    // Disini akan terjadi error karena kita tidak mengoverride function run() dari trait CanRun
     // public function run(): void
     // {
         // echo "Person $this->name is running" . PHP_EOL;
@@ -139,15 +138,15 @@
 
     // public function hello(?string $name): void
     // {
-        // echo "Hello in Peson" . PHP_EOL;
+        // echo "Hello in Person" . PHP_EOL;
     // }
 // }
 
 // $person = new Person();
 // $person->hello("Adrian");
 // $person->goodBye("Adrian");
-// Hello Adrian
-// Good bye Adrian
+// Hello in Person
+// Good bye in Person
 // Maka akan menjalankan function hello() & goodBye() di class Person walaupun disini kita telah membuat functionnya juga didalam trait SayGoodbye dan trait sayHello (Jadi yang didahulukan function yang dibuat di classnya / Trait ter override oleh function yang dibuat di class)
 
 // $person->name = "Adrian";
@@ -229,7 +228,7 @@
 // $person->goodBye("Adrian");
 // Hello Adrian (Maka akan menjalankan function hello() di trait sayHello)
 // Good bye Adrian (Maka akan menjlan function goodBye() di trait SayGoodbye)
-// Artinya function goodBye() dan hello() akan teroverride oleh trit sayHello dan SayGoodbye
+// Artinya function goodBye() dan hello() akan teroverride oleh trait sayHello dan SayGoodbye
 
 // $person->name = "Adrian";
 // var_dump($person);
@@ -302,26 +301,15 @@ class Person extends ParentPerson
     use SayGoodBye, sayHello, HasName, CanRun {
         // Kita ubah visibility function hello from trait sayHello
         // hello as private;
+
         // Kita ubah visibility function goodBye() from trait SayGoodbye
         // goodBye as private;
     }
 
-    // Disini akan terjadi error karena kita tidak mengoverride function run() dari trait CanRun
     public function run(): void
     {
         echo "Person $this->name is running" . PHP_EOL;
     }
-
-    // Contoh Trait Override (Mengoverride function yang ada di trait)
-    // public function goodBye(?string $name): void
-    // {
-    //     echo "Good bye in Person" . PHP_EOL;
-    // }
-
-    // public function hello(?string $name): void
-    // {
-    //     echo "Hello in Peson" . PHP_EOL;
-    // }
 }
 
 $person = new Person();
