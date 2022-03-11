@@ -40,8 +40,8 @@ class Person
     }
 
     // Destructor
-    // function __destruct()
-    // {
-    //     echo "Object person {$this->name} is destroyed";
-    // }
+    function __destruct()
+    {
+        echo "Object Person $this->name is destroyed" . PHP_EOL;
+    }
 }

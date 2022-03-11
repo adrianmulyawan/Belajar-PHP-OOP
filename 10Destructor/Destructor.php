@@ -2,10 +2,10 @@
 
 // > Destructor 
 // 1. Jika cunstructor adalah function yang akan dipanggil ketika object dibuat
-// 2. Destructor adalah function yang akan dipanggil ketika bject dihapus dari memory
+// 2. Destructor adalah function yang akan dipanggil ketika object dihapus dari memory
 // 3. Biasanya ketika object tsb sudah tidak lagi digunakan, atau ketika aplikasi akan mati
 // 4. Untuk membuat function destructor, kita bisa menggunakan nama function "__destruct()"
-// 5. Khusu untuk destructor, kita tidak boleh menambahkan function argument
+// 5. Khusus untuk destructor, kita tidak boleh menambahkan function argument
 // 6. Dalam penggunaan sehari-hari, ini misal cocok untuk menutup koneksi ke database atau menutup proses menulis ke file, sehingga tidak terjadi memory leak.
 
 // > Contoh Kode Destructor
