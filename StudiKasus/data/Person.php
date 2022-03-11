@@ -10,18 +10,16 @@ class Person
     // Properties Type Declaration
     var string $name;
     // Nullable Properties
-    var ?string $address;
+    var ?string $address = null;
     // Default Properties Value
     var string $country = "Indonesia";
 
     // Constructor
-    // function __construct(string $name, ?string $address)
-    // {
-    //     $this->name = $name;
-    //     $this->address = $address;
-
-    //     echo "Hello, Selamat Datang {$name} dan alamatmu disinikan {$address}" . PHP_EOL;
-    // }
+    function __construct(string $name, ?string $address)
+    {
+        $this->name = $name;
+        $this->address = $address;
+    }
 
     // Method / Function
     // Parameter "$name" method/function dapat kita kosongkan (nullable)
