@@ -11,16 +11,17 @@ $person1->country = "Indonesia";
 echo $person1->name . PHP_EOL;
 echo $person1->address . PHP_EOL;
 echo $person1->country . PHP_EOL;
+// Mengakses method sayHello() pada Class Person()
 $person1->sayHello("Adrian");
 // Hasil: Hello Adrian, my name is Wawan
 
 // =================================================================================================
 
-$manda = new Person();
-$manda->name = "Iko";
-$manda->sayHello(null);
+// $manda = new Person();
+// $manda->name = "Iko";
+// $manda->sayHello(null);
 // Hi, my name is Iko
 
 // Panggil Function authorInfo()
-$manda->authorInfo();
-$person1->authorInfo();
+// $manda->authorInfo();
+// $person1->authorInfo();

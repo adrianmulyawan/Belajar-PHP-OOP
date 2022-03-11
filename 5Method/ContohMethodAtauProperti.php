@@ -3,7 +3,7 @@
 // > Function atau Method
 // 1. Selain menambahkan properties, kita juga bisa menambahkan function/method ke object
 // 2. Cara dengan mendeklarasikan function tsb didalam block class
-// 3. Sama seperti function biasanya, kita bisa menambahkan return value dan parameter
+// 3. Sama seperti function biasanya, kita bisa menambahkan return value dan parameter/argument
 // 4. Untuk mengakses function tsb, kita bisa menggunakna tanda "->" diikuti dengan nama methodnya. Sama seperti mengakses properties.
 
 // > Kode: Function / Method

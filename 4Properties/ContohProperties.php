@@ -47,7 +47,7 @@ $person->country = "Indonesia"; # Manipulasi Properties / Field
 
 // > Default Properties Value
 // 1. Sama seperti variable, di properties kita juga bisa langsung mengisi valuenya
-// 2. Ini mirip seperti default valuer, jadi jika tidak diubah di object, maka properties tsb akan memiliki value tsb
+// 2. Ini mirip seperti default value pada parameter function, jadi jika tidak diubah di object, maka properties tsb akan memiliki value tsb
 
 // > Contoh Defaulut Properties Value
 // class Person
@@ -69,3 +69,5 @@ $person->country = "Indonesia"; # Manipulasi Properties / Field
 //     var ?string $address; (kita set agar nilainya bisa null)
 //     var string $country = "Indonesia";
 // }
+
+// Dan Nullable ini dapat kita tambahkan didalam parameter / argument pada sebuah function atau method

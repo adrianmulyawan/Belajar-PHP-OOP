@@ -20,7 +20,7 @@ $person2->country = "Indonesia";
 
 // Contoh error
 // $person2->name = [];
-// Error karena propertie $name pada class Person kita deklarasikan sebagai strin dan disini kita ubah menjadi array
+// Error karena propertie $name pada class Person kita deklarasikan sebagai string dan disini kita ubah menjadi array
 
 echo "Name: $person2->name" . PHP_EOL;
 echo "Address: $person2->address" . PHP_EOL;

@@ -4,9 +4,10 @@ class Person
 {
     // Menggunakan const
     // Constant itu menempel didalam class, berbeda dari properties/method (function) menempel di object
-    const AUTHOR = "Adrian Mulyawan";
+    // const AUTHOR = "Adrian Mulyawan";
 
     // Properties
+    // Properties Type Declaration
     var string $name;
     // Nullable Properties
     var ?string $address;
@@ -14,38 +15,36 @@ class Person
     var string $country = "Indonesia";
 
     // Constructor
-    function __construct(string $name, ?string $address)
-    {
-        $this->name = $name;
-        $this->address = $address;
+    // function __construct(string $name, ?string $address)
+    // {
+    //     $this->name = $name;
+    //     $this->address = $address;
 
-        echo "Hello, Selamat Datang {$name} dan alamatmu disinikan {$address}" . PHP_EOL;
-    }
+    //     echo "Hello, Selamat Datang {$name} dan alamatmu disinikan {$address}" . PHP_EOL;
+    // }
 
     // Method / Function
+    // Parameter "$name" method/function dapat kita kosongkan (nullable)
     function sayHello(?string $name)
     {
         if (!isset($name)) {
-            // {$this->name} mengacu dari properties $name / object saat ini
-            echo "Hi, my name is {$this->name}" . PHP_EOL;
+            echo "Hello, my name is $this->name" . PHP_EOL;
         } else {
-            // $name mengacu pada argument/parameter $name dari function tsb (sayHello())
-            echo "Hello $name, my name is {$this->name}" . PHP_EOL;
+            echo "Hi $name, my name is $this->name" . PHP_EOL;
         }
-        
     }
 
     // Method / Function
-    function authorInfo()
-    {
+    // function authorInfo()
+    // {
         // Mengakses constant AUTHOR menggunakan keyword self
         // Menggunakan "self" karena berada di class yang sama
-        echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
-    }
+        // echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
+    // }
 
     // Destructor
-    function __destruct()
-    {
-        echo "Object person {$this->name} is destroyed";
-    }
+    // function __destruct()
+    // {
+    //     echo "Object person {$this->name} is destroyed";
+    // }
 }

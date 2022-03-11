@@ -17,6 +17,7 @@
 //             echo "Hi, my name is {$this->name}" . PHP_EOL;
 //         } else {
                # $name mengacu pada argument/parameter $name dari function tsb
+               # $this->name mengacu dari object properties $name
 //             echo "Helo $name, my name is {$this->name}" . PHP_EOL;
 //         }
         
