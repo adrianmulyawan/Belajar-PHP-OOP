@@ -4,7 +4,7 @@ class Person
 {
     // Menggunakan const
     // Constant itu menempel didalam class, berbeda dari properties/method (function) menempel di object
-    // const AUTHOR = "Adrian Mulyawan";
+    const AUTHOR = "Adrian Mulyawan"; #nilainya tidak bisa diubah
 
     // Properties
     // Properties Type Declaration
@@ -35,12 +35,11 @@ class Person
     }
 
     // Method / Function
-    // function authorInfo()
-    // {
-        // Mengakses constant AUTHOR menggunakan keyword self
-        // Menggunakan "self" karena berada di class yang sama
-        // echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
-    // }
+    function authorInfo()
+    {
+        // mengakses variable constant AUTHOR menggunakan keyword "self"
+        echo "AUTHOR : " . self::AUTHOR . PHP_EOL;
+    }
 
     // Destructor
     // function __destruct()
