@@ -13,12 +13,12 @@ class Product
 
     public function getName()
     {
-        return $this->name;
+        return "Nama Produk: $this->name";
     }
 
     public function getPrice()
     {
-        return $this->price;
+        return "Harga Produk: $this->price";
     }
 }
 

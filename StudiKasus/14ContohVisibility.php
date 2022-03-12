@@ -4,9 +4,9 @@ require_once "data/Product.php";
 
 $product = new Product("Liquid Rasa Mie Goreng", 35000);
 
-// echo $product->name;
-// echo $product->price;
-// Error karna visibility dari properties $name dan $price adalah privite cuma bisa diakses dari classnya saja
+// echo $product->name . PHP_EOL;
+// echo $product->price . PHP_EOL;
+// Error karna visibility dari properties $name dan $price adalah private cuma bisa diakses dari classnya saja
 
 echo $product->getName() . PHP_EOL;
 // Liquid Rasa Mie Goreng
