@@ -1,7 +1,7 @@
 <?php
 
 // > Polymorphism
-// 1. Polumorphism berasal dari bahasa Yunani yang berarti banyak bentuk.
+// 1. Polymorphism berasal dari bahasa Yunani yang berarti banyak bentuk.
 // 2. Dalam OOP, Polymorphism adalah kemampuan sebuah object berubah bentuk menjadi bentuk lain (sebuh object menjadi bentuk object lainnya).
 // 3. Polymorphism erat hubungannya dengan inheritance.
 
