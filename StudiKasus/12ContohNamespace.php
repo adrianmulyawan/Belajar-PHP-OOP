@@ -7,5 +7,6 @@ require_once "data/Helper.php";
 $conflict1 = new \Data\One\Conflict();
 $conflict2 = new \Data\Two\Conflict();
 
-echo \Helper\APPLICATION . PHP_EOL;
+// Mengakses Function atau Variabel Constant di Namespace
 \Helper\helpMe();
+echo \Helper\APPLICATION;
