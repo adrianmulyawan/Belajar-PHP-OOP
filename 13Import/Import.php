@@ -19,7 +19,7 @@
 // =================================================================================================
 
 // > Alias
-// 1. Saat kita menggunakan user, artinya kita tidak perlu lagi menggunakan nama namespace diawal class ketika kita ingin membuat class tersebut menjadi sebuah object
+// 1. Saat kita menggunakan use, artinya kita tidak perlu lagi menggunakan nama namespace diawal class ketika kita ingin membuat class tersebut menjadi sebuah object
 // 2. Namun bagaimana jika kita ternyata nama classnya sama?
 // 3. Untungnya PHP memiliki fitur yang namanya alias
 // 4. Alias adalah kemampuan membuat nama lain dari class, function atau constant yang ada
