@@ -5,9 +5,9 @@ namespace Data;
 // Saat kita membuat interface otomatis semunya abstract (mulai dari nama interface dan functionnya)
 interface Car
 {
-    function drive(): void;
+    public function drive(): void;
 
-    function getTire(): int;
+    public function getTire(): int;
 }
 
 // Implements Interface
