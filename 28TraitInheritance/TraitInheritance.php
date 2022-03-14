@@ -4,7 +4,7 @@
 // 1. Sebelumnya kita sudah tahu bahwa class bisa menggunakan trait lebih dari satu
 // 2. Lantas bagaiaman dengan yang mengggunakan trait lain?
 // 3. Trait bisa menggunakan trait lain, mirip seperti interface yang bisa implements ke interface lain
-// 4. Untuk menggunakan trait lain dari trait, poenggunaannya samaseperti dengan penggunaan trait lain di class
+// 4. Untuk menggunakan trait lain dari trait, poenggunaannya sama seperti dengan penggunaan trait lain di class
 
 // > Contoh Trait Inheritance
 namespace Data\All;
