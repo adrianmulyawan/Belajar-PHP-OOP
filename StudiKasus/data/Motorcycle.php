@@ -3,7 +3,7 @@
 namespace Data;
 
 // Saat kita membuat interface otomatis semunya abstract (mulai dari nama interface dan functionnya)
-interface Car
+interface Motor
 {
     public function drive(): void;
 
@@ -13,15 +13,15 @@ interface Car
 // Implements Interface
 // Dengan Interface kita bisa melakukan implementes > 1 interface
 // Sedangkan Class / extends itu hanya boleh memiliki 1 parent
-class Avanza implements Car
+class Supra implements Motor
 {
     public function drive(): void
     {
-        echo "Drive Avanza" . PHP_EOL;
+        echo "Supra is drive" . PHP_EOL;
     }
 
     public function getTire(): int
     {
-        return 4;
+        return 2;
     }
 }

@@ -1,9 +1,10 @@
 <?php 
 
-require_once "data/Car.php";
+require_once "data/Motorcycle.php";
 
-use Data\{Avanza};
+use Data\{Supra};
 
-$avanza = new Avanza();
-$avanza->drive();
-$avanza->getTire();
+$supra = new Supra();
+$supra->drive();
+$supra->getTire();
+$supra->getTire();
