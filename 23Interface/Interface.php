@@ -10,32 +10,33 @@
 // 7. Dan berbeda dengan class, kita bisa implements lebih dari satu interface
 
 // > Contoh Interface
-// namespace Data;
+namespace Data;
 
 // Saat kita membuat interface otomatis semunya abstract (mulai dari nama interface dan functionnya)
-// interface Car
-// {
-    // function drive(): void;
+interface Motor
+{
+    public function drive(): void;
 
-    // function getTire(): int;
-// }
+    public function getTire(): int;
+}
 
 // Implements Interface
 // Dengan Interface kita bisa melakukan implementes > 1 interface
 // Sedangkan Class / extends itu hanya boleh memiliki 1 parent
-// class Avanza implements Car
-// {
-    // public function drive(): void
-    // {
-        // echo "Drive Avanza" . PHP_EOL;
-    // }
+class Supra implements Motor
+{
+    public function drive(): void
+    {
+        echo "Supra is drive" . PHP_EOL;
+    }
 
-    // public function getTire(): int
-    // {
-        // return 4;
-    // }
-// }
+    public function getTire(): int
+    {
+        return 2;
+    }
+}
 
-// $avanza = new Avanza();
-// $avanza->drive();
-// Hasil: Drive Avanza
+$supra = new Supra();
+$supra->drive();
+$supra->getTire();
+$supra->getTire();
