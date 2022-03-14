@@ -19,7 +19,7 @@ interface IsClear
 
 // Saat kita membuat interface otomatis semunya abstract (mulai dari nama interface dan functionnya
 // Kita extends interface HasBrand dan IsMaintenance
-interface Car extends HasBrand, IsMaintenance
+interface Mobil extends HasBrand, IsMaintenance
 {
     function drive(): void;
 
@@ -29,11 +29,11 @@ interface Car extends HasBrand, IsMaintenance
 // Implements Interface
 // Dengan Interface kita bisa melakukan implementes > 1 interface
 // Sedangkan Class / extends itu hanya boleh memiliki 1 parent
-class Avanza implements Car, IsClear
+class Yaris implements Mobil, IsClear
 {
     public function drive(): void
     {
-        echo "Drive Avanza" . PHP_EOL;
+        echo "Drive Yaris" . PHP_EOL;
     }
 
     public function getTire(): int
@@ -45,7 +45,7 @@ class Avanza implements Car, IsClear
     // Kita perlu menambahkan funtion getBrand dan isMaintenance()
     public function getBrand(): string
     {
-        return "Avanza From Toyota";
+        return "Avanza From Toyota" . PHP_EOL;
     }
 
     public function isMaintance(): bool

@@ -2,11 +2,12 @@
 
 require_once "data/Garage.php";
 
-use Data\{HasBrand, IsMaintenance, IsClear, Car, Avanza};
+use Data\{Yaris};
 
-$avanza = new Avanza();
-$avanza->drive();
-$avanza->getTire();
-$avanza->getBrand();
-$avanza->isMaintance();
-$avanza->isClear();
+$yaris = new Yaris();
+// $yaris->drive();
+// $yaris->getTire();
+// $yaris->getBrand();
+// $yaris->isMaintance();
+// $yaris->isClear();
+$yaris->drive();

@@ -5,6 +5,8 @@
 // 2. Namun berbeda dengan interface, sebuah child class bisa implement lebih dari 1 interface
 // 3. Bahkan interface pun bisa implement interface lain, bisa lebih dari 1. Namun jika interface ingin mewarisi interface lain, kita menggunakan kata kunci "extends", bukan implements
 
+// Note : Interface tidak boleh extends ke class, sedangkan class boleh implements ke interface
+
 // > Implementasi Interface Inheritance
 namespace Data;
 
