@@ -29,7 +29,7 @@
 
 // > Iterator
 // 1. Sebelumnya kita melakukan iterasi data di properties secara otomatis menggunakan foreach
-// 2. Jika kita ingin menangani hal ini secara manual, kita bisa menggunakan Iterator
+// 2. Jika kita ingin menangani hal ini secara manual, kita bisa menggunakan "Interface" bernama "Iterator"
 // 3. Iterator adalah interface yang digunakan untuk melakukan iterasi, namun membuat Iterator secara manual lumayan cukup ribet, oleh karena itu sekarang kita akan gunakan "ArrayIterator", yaitu iterator yang menggunakan array sebagai data iterasi nya
 // 4. Dan agar class kita bisa di iterasi secara manual, kita bisa menggunakan interface "IteratorAggregate", disana kita hanya butuh meng-override function "getIterator()" yang mengembalikan data/object Iterator salah satunya class turunanya "ArrayIterator()"
 
@@ -48,7 +48,7 @@ class Data implements IteratorAggregate
             "first" => $this->first,
             "second" => $this->second,
             "third" => $this->third,
-            "forth" => $this->forth
+            "forth" => $this->forth,
         ];
 
         $iterator = new ArrayIterator($array);
