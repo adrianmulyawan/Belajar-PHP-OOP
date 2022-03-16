@@ -2,7 +2,7 @@
 
 // > Anonymous Class
 // 1. Anonymous class atau class tanpa nama.
-// 2. Anonymous class adalah kemampuan mendeklarasikan class, sekaligus meng-instansiasi object-nya secara langsung.
+// 2. Anonymous class adalah kemampuan mendeklarasikan class, sekaligus meng-instansiasi object-nya secara langsung (membuat class langsung dengan objectnya).
 // 3. Anonymous class sangat cocok ketika kita berhadapan dengan kasus membuat implementasi interface atau abstract class sederhana, tanpa harus membuat impelementasinya
 
 // > Contoh Anonymous Class
