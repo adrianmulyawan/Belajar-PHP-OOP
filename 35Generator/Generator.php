@@ -17,7 +17,9 @@ function getGenap(int $max): Iterator
         }
     }
 
-    return new ArrayIterator($array);
+    $iterator = new ArrayIterator($array);
+
+    return $iterator;
 }
 
 foreach(getGenap(100) as $value) {
