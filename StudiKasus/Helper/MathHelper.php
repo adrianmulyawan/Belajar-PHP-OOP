@@ -18,4 +18,9 @@ class MathHelper
 
         return $total;
     }
+
+    public function greeting(string $name)
+    {
+        echo "Hello {$name}" . PHP_EOL;
+    }
 }

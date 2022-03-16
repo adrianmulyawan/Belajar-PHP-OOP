@@ -21,3 +21,7 @@ echo MathHelper::$name . PHP_EOL;
 $result = MathHelper::sum(10, 10, 10, 10, 10);
 echo MathHelper::$name = "Hasilnya adalah $result" . PHP_EOL;
 // Hasil: Hasilnya adalah 50
+
+// Tidak bisa seperti ini karena method greeting() bukan static
+// $greeting = MathHelper::greeting($adrian);
+// echo $greeting;
