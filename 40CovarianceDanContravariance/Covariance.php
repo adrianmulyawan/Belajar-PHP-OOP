@@ -48,7 +48,7 @@ class CatShelter implements AnimalShelter
 class DogShelter implements AnimalShelter
 {
     // Dengan Covariance kita bisa merubah return function parentnya menjadi lebih spesifik
-    // Disini awalnya return valuenya adalah "Pet" kita ubah menjadi "Cat"
+    // Disini awalnya return valuenya adalah "Pet" kita ubah menjadi "Dog"
     public function adopt(string $name): Dog
     {
         $dog = new Dog();
