@@ -8,6 +8,8 @@
 
 // Note: Throwable jarang digunakan karena kita harus implements semua function-functionnya
 
+// Idealnya kita akan menggunakan class "exception" yang merupakan turunan dari Throwable.
+
 // > Membuat Class Exception
 /* 
     class ValidationException extends Exception
