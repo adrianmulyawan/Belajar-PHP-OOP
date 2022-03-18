@@ -12,7 +12,7 @@ function validateLoginRequest(LoginRequest $request)
     } elseif (trim($request->username) == "") {
         // Exception: Exception bawaan dari php
         throw new Exception("Username Kosong!");
-    } elseif (trim($request->username) == "") {
+    } elseif (trim($request->password) == "") {
         // Exception: Exception bawaan dari php
         throw new Exception("Password Kosong!");
     }
