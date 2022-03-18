@@ -1,7 +1,7 @@
 <?php
 
 // > DateTime
-// 1. Biasanya didalam bahasa pemrograman sudah disediakan carauntuk memanipulasi data waktu, termasuk di PHP.
+// 1. Biasanya didalam bahasa pemrograman sudah disediakan cara untuk memanipulasi data waktu, termasuk di PHP.
 // 2. Di PHP, kita bisa menggunakan class "DateTime" untuk memanipulasi data waktu.
 // 3. Ada banyak sekali function di class "DateTime" yang bisa kita gunakan untuk memanipulasi data waktu.
 
@@ -34,7 +34,7 @@ var_dump($dateTime);
 /*
     object(DateTime)#1 (3) {   
         ["date"]=>               
-        string(26) "1997-11-01 15
+        string(26) "1997-11-01 15:21:00
         ["timezone_type"]=>      
         int(3)                   
         ["timezone"]=>           
@@ -88,7 +88,7 @@ var_dump($dateTime);
 // =================================================================================================
 
 // > DateTimeZone
-// 1. Saat kita membuat object DiteTime, dia akan secara otomatis membuat aktu saat ini sesuai dengan timezone yang disetting di konfigurasi di file php.ini.
+// 1. Saat kita membuat object DateTime, dia akan secara otomatis membuat waktu saat ini sesuai dengan timezone yang disetting di konfigurasi di file php.ini.
 // 2. Atau kita bisa menggunakan function setTimeZone untuk mengubah timezone DateTime
 
 // > Implementasi DateTimeZone
